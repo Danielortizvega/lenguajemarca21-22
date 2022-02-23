@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Author" content="Daniel">
+    <meta name="Description" content="hola">
+    <meta name="Keywords" content="hola">
+	<title>ejerciciodani</title>
+	<link rel="shortcut icon" href="icono.png" type="daniel">
+    <style type="text/css">
+    :root( 
+        --micolor( #ff00bf)
+    )
+   .body { 
+    background-color: #ff00bf;
+    width: 50vw;
+    height: 50vw;
+    
+} 
+    .item1 { grid-area: header;
+        background-color:var(--micolor); }
+.item2 { grid-area: menu; 
+    background-color: #ffee00;}
+.item3 { grid-area: main; 
+    background-color: #1900ff;}
+.item4 { grid-area: right;
+    background-color: #00eeff; }
+.item5 { grid-area: footer;
+    background-color: #22421c; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 6px;
+  background-color: #09ff00;
+  padding: 6px;
+}
+
+.grid-container > div {
+ 
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;}
+  
+</style>
+        <body>
+            <div class="grid-container">
+                <div class="item1">Header</div>
+                <div class="item2">Menu</div>
+                <div class="item3">Main</div>  
+                <div class="item4">Right</div>
+                <div class="item5">Footer</div>
+              </div>
+              
+</body>
